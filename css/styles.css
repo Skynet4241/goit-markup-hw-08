@@ -22,7 +22,6 @@ body {
 .footer-item,
 .footer-adress-list {
     text-decoration: none;
-    cursor: pointer;
 }
 
 .list {
@@ -126,7 +125,6 @@ body {
 }
 
 .features-text {
-    font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
@@ -170,7 +168,6 @@ body {
 }
 
 .team-text {
-    font-weight: 400;
     font-size: 16px;
     line-height: 1.18;
     text-align: center;
