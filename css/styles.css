@@ -20,7 +20,7 @@ body {
 .header-item,
 .contact-item,
 .footer-item,
-.footer-adress {
+.footer-adress-list {
     text-decoration: none;
     cursor: pointer;
 }
@@ -197,7 +197,7 @@ body {
     color: var(--title-inverse-color);
 }
 
-.footer-adress {
+.footer-adress-list {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
@@ -206,7 +206,7 @@ body {
     color: var(--footer-contacts-color);
 }
 
-.footer-adress:hover,
-.footer-adress:focus {
+.footer-address .footer-adress-list:hover,
+.footer-address .footer-adress-list:focus {
     color: var(--accent-color);
 }
