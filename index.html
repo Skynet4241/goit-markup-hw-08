@@ -17,31 +17,33 @@
   <body>
     <header class="header">
       <a href="./index.html" lang="en" class="header-logo"
-        ><span class="logo-accent">Web</span>Studio</a
+        >Web<span class="logo-accent">Studio</span></a
       >
       <nav>
-        <ul class="nav">
-          <li class="nav-item"><a href="./index.html">Студія</a></li>
-          <li class="nav-item"><a href="./portfolio.html">Портфоліо</a></li>
-          <li class="nav-item"><a href="">Контакти</a></li>
+        <ul class="header-list list">
+          <li class="header-studio"><a href="./index.html">Студія</a></li>
+          <li class="header-portfolio"><a href="./portfolio.html">Портфоліо</a></li>
+          <li class="header-contacts"><a href="">Контакти</a></li>
         </ul>
       </nav>
-      <ul>
-        <li class="contact-link"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-        <li class="contact-link"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+      <ul class="contact-list list">
+        <li class="header-mail">
+          <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+        </li>
+        <li class="header-tel"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
       </ul>
     </header>
     <main>
-      <section>
-        <h1>
+      <section class="hero">
+        <h1 class="hero-title">
           Ефективні рішення<br />
           для вашого бізнесу
         </h1>
-        <button type="button">Замовити послугу</button>
+        <button type="button" class="hero-btn">Замовити послугу</button>
       </section>
       <section>
-        <h2>Особливості</h2>
-        <ul class="features">
+        <h2 class="visually-hidden">Особливості</h2>
+        <ul class="features list">
           <li class="features-item">
             <h3 class="features-title">Увага до деталей</h3>
             <p class="features-text">
@@ -69,8 +71,8 @@
         </ul>
       </section>
       <section>
-        <h2>Чим ми займаємося</h2>
-        <ul class="employment">
+        <h2 class="employment-title">Чим ми займаємося</h2>
+        <ul class="employment list">
           <li class="employment-item">
             <img
               src="./images/img1.jpg"
@@ -101,8 +103,8 @@
         </ul>
       </section>
       <section>
-        <h2>Наша команда</h2>
-        <ul class="team">
+        <h2 class="team-name">Наша команда</h2>
+        <ul class="team list">
           <li class="team-item">
             <img
               src="./images/img4.jpg"
@@ -112,7 +114,7 @@
               class="team-image"
             />
             <h3 class="team-title">Ігор Дем'яненко</h3>
-            <p lang="en" clas="team-text">Product Designer</p>
+            <p lang="en" class="team-text">Product Designer</p>
           </li>
           <li class="team-item">
             <img
@@ -123,7 +125,7 @@
               class="team-image"
             />
             <h3 class="team-title">Ольга Рєпіна</h3>
-            <p lang="en" clas="team-text">Frontend Developer</p>
+            <p lang="en" class="team-text">Frontend Developer</p>
           </li>
           <li class="team-item">
             <img
@@ -134,7 +136,7 @@
               class="team-image"
             />
             <h3 class="team-title">Микола Тарасов</h3>
-            <p lang="en" clas="team-text">Marketing</p>
+            <p lang="en" class="team-text">Marketing</p>
           </li>
           <li class="team-item">
             <img
@@ -145,18 +147,22 @@
               class="team-image"
             />
             <h3 class="team-title">Михайло Єрмаков</h3>
-            <p lang="en" clas="team-text">UI Designer</p>
+            <p lang="en" class="team-text">UI Designer</p>
           </li>
         </ul>
       </section>
     </main>
     <footer class="footer">
-      <a href="./index.html" class="footer-logo"><span class="logo-accent">Web</span>Studio</a>
+      <a href="./index.html" lang="en" class="header-logo"
+        >Web<span class="logo-accent">Studio</span></a
+      >
       <address>
-        <ul class="footer-address">
+        <ul class="footer-address list">
           <li class="footer-item"><a href="">м. Київ, пр-т Лесі Українки, 26</a></li>
-          <li class="footer-item"><a href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li class="footer-item"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="footer-tel">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+          </li>
+          <li class="footer-mail"><a href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
     </footer>
