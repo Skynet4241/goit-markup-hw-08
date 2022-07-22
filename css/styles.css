@@ -53,6 +53,10 @@ body {
     color: var(--accent-color);
 }
 
+.header-list .current {
+    color: var(--accent-color);
+}
+
 
 .header-logo {
     font-family: 'Raleway', sans-serif;
@@ -175,6 +179,12 @@ body {
     color: var(--main-text-color);
 }
 
+.team-item {
+    background: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
 /* ---footer--- */
 
 .logo-accent-footer {
@@ -206,4 +216,51 @@ body {
 .footer-address .footer-adress-list:hover,
 .footer-address .footer-adress-list:focus {
     color: var(--accent-color);
+}
+
+/* ---portfolio--- */
+
+.portfolio .portfolio-btn:hover,
+.portfolio .portfolio-btn:focus {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-inverse-color);
+    background-color: var(--accent-color);
+}
+
+.portfolio-btn {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--title-color);
+    cursor: pointer;
+}
+
+.portfolio-title {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+    color: var(--title-color);
+}
+
+.portfolio-text {
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+}
+
+.portfolio-list {
+    background: var(--title-inverse-color);
+    border: 1px solid #EEEEEE;
 }
