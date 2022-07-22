@@ -218,6 +218,11 @@ body {
     color: var(--accent-color);
 }
 
+.footer-address .footer-item:hover,
+.footer-address .footer-item:focus {
+    color: var(--accent-color);
+}
+
 /* ---portfolio--- */
 
 .portfolio .portfolio-btn:hover,
