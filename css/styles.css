@@ -11,11 +11,36 @@
     --footer-contacts-color: rgb(255 255 255 / 0.6);
 }
 
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 body {
     font-family: 'Roboto', sans-serif;
 }
 
-
+.hero-btn,
+.portfolio-btn {
+    cursor: pointer;
+    border: none;
+}
 
 .header-logo,
 .header-item,
@@ -28,6 +53,16 @@ body {
 .list {
     list-style: none;
 }
+
+.container {
+    width: 1200px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0 auto;
+    outline: 2px solid red;
+}
+
+
 
 .visually-hidden {
     position: absolute;
@@ -58,6 +93,11 @@ body {
     color: var(--accent-color);
 }
 
+.header {
+    background-color: #fff;
+    padding-top: 24px;
+    padding-bottom: 25px;
+}
 
 .header-logo {
     font-family: 'Raleway', sans-serif;
@@ -91,6 +131,20 @@ body {
 
 /* ---Hero--- */
 
+.hero-content {
+    padding: 200px 100px 280px 100px;
+}
+
+.hero-title {
+    max-width: 696px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    margin: 0 auto;
+}
+
 .hero {
     background-color: #2F303A;
 }
@@ -115,11 +169,15 @@ body {
     letter-spacing: 0.06em;
     color: var(--main-background-color);
     background-color: var(--accent-color);
-    cursor: pointer;
     border: none;
 }
 
 /* ---features--- */
+
+.features {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 
 .features-title {
     font-weight: 700;
@@ -140,6 +198,10 @@ body {
 /* ---employment--- */
 
 .employment-title {
+    padding-bottom: 50px;
+}
+
+.employment-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -152,6 +214,20 @@ body {
 
 .command {
     background-color: var(--team-section-background-color);
+}
+
+.team-name {
+    padding-top: 94px;
+    padding-bottom: 50px;
+}
+
+.team-title {
+    padding-top: 30px;
+    padding-bottom: 10px;
+}
+
+.team-text {
+    padding-bottom: 30px;
 }
 
 .team-name {
@@ -188,6 +264,16 @@ body {
 }
 
 /* ---footer--- */
+
+.foter-logo {
+    padding: 60px 1250px 20px 0px;
+
+}
+
+.footer-adress-list,
+.footer-item {
+    padding-bottom: 9px;
+}
 
 .logo-accent-footer {
     color: var(--title-inverse-color);
@@ -248,8 +334,6 @@ body {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
-    cursor: pointer;
-    border: none;
 }
 
 .portfolio-title {
