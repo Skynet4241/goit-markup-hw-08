@@ -11,19 +11,21 @@
     --footer-contacts-color: rgb(255 255 255 / 0.6);
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 p,
 h1,
 h2,
 h3,
-h4,
-h5,
-h6 {
+ul {
     margin: 0;
 }
 
 ul {
-    margin: 0;
-    padding-left: 0;
+    padding: 0;
+    list-style: none;
 }
 
 img {
@@ -32,9 +34,6 @@ img {
     height: auto;
 }
 
-body {
-    font-family: 'Roboto', sans-serif;
-}
 
 .section {
     padding-top: 94px;
@@ -45,19 +44,19 @@ body {
 .portfolio-btn {
     cursor: pointer;
     border: none;
+    display: block;
+
 }
 
 .header-logo,
 .header-item,
 .contact-item,
+.foter-logo,
 .footer-item,
 .footer-adress-list {
     text-decoration: none;
 }
 
-.list {
-    list-style: none;
-}
 
 .container {
     width: 1200px;
@@ -96,6 +95,32 @@ body {
 
 .header-list .current {
     color: var(--accent-color);
+}
+
+.header-list {
+    padding: 32px 32px;
+    display: flex;
+    column-gap: 50px;
+    align-items: center;
+
+}
+
+.header .container {
+    display: flex;
+
+}
+
+.header-logo {
+
+    margin-right: 93px;
+}
+
+.contact-list {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    display: flex;
+    margin-left: auto;
+    column-gap: 50px;
 }
 
 .header {
@@ -150,6 +175,10 @@ body {
     margin: 0 auto;
 }
 
+.hero-btn {
+    padding: 10px 32px;
+}
+
 .hero {
     background-color: #2F303A;
 }
@@ -179,10 +208,6 @@ body {
 
 /* ---features--- */
 
-.features {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .features-title {
     padding-bottom: 10px;
@@ -206,6 +231,10 @@ body {
 
 /* ---employment--- */
 
+.employment {
+    padding-top: 0;
+}
+
 .employment-title {
     padding-bottom: 50px;
 }
@@ -226,7 +255,6 @@ body {
 }
 
 .team-name {
-    padding-top: 94px;
     padding-bottom: 50px;
 }
 
@@ -277,10 +305,19 @@ body {
 }
 
 /* ---footer--- */
+.foter-logo {
+    padding: 60px 100px 20px 0px;
+}
 
 .foter-logo {
-    padding: 60px 1250px 20px 0px;
-
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    display: block;
 }
 
 .footer-adress-list,
@@ -327,12 +364,7 @@ body {
 /* ---portfolio--- */
 
 .portfolio {
-    padding-top: 94px;
     margin-bottom: 50px;
-}
-
-.portfolio-tech {
-    padding-bottom: 94px;
 }
 
 .portfolio-link {
