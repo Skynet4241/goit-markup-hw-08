@@ -386,6 +386,9 @@ img {
 /* ---portfolio--- */
 
 .portfolio {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
     margin-bottom: 50px;
 }
 
@@ -394,12 +397,18 @@ img {
 }
 
 .portfolio-title {
+    padding-left: 24px;
     margin-top: 20px;
     margin-bottom: 4px;
 }
 
 .portfolio-text {
+    padding-left: 24px;
     margin-bottom: 20px;
+}
+
+.portfolio-btn {
+    padding: 6px 22px;
 }
 
 .portfolio-btn:hover,
@@ -423,6 +432,19 @@ img {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
+    background: #F5F4FA;
+    border-radius: 4px;
+}
+
+.portfolio-tech {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.portfolio-list {
+    flex-basis: calc((100% - 60px) / 3);
+
 }
 
 .portfolio-title {
