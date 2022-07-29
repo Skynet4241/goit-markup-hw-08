@@ -97,22 +97,24 @@ img {
     color: var(--accent-color);
 }
 
-.header-list {
-    padding: 32px 32px;
-    display: flex;
-    column-gap: 50px;
-    align-items: center;
-
-}
-
 .header .container {
     display: flex;
-
 }
 
 .header-logo {
-
+    padding: 24px 0 25px;
     margin-right: 93px;
+}
+
+.header-list {
+    text-align: center;
+    display: flex;
+    column-gap: 50px;
+}
+
+.header-item {
+    display: block;
+    padding: 32px 0 32px;
 }
 
 .contact-list {
@@ -194,6 +196,8 @@ img {
 }
 
 .hero-btn {
+    min-width: 216px;
+    height: 50px;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.87;
@@ -203,11 +207,17 @@ img {
     letter-spacing: 0.06em;
     color: var(--main-background-color);
     background-color: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
     border: none;
 }
 
 /* ---features--- */
 
+.features {
+    display: flex;
+    column-gap: 30px;
+}
 
 .features-title {
     padding-bottom: 10px;
@@ -233,6 +243,8 @@ img {
 
 .employment {
     padding-top: 0;
+    display: flex;
+    column-gap: 30px;
 }
 
 .employment-title {
@@ -249,6 +261,16 @@ img {
 }
 
 /* ---team--- */
+
+.team {
+    display: flex;
+    column-gap: 30px;
+}
+
+.team-item {
+    height: 368px;
+    width: calc((100% - 60px) / 3);
+}
 
 .command {
     background-color: var(--team-section-background-color);
