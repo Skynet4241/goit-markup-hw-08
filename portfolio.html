@@ -5,12 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
-      rel="stylesheet"
-    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.css"
@@ -18,8 +12,15 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
+
   <body>
     <header class="header">
       <div class="container">
@@ -55,8 +56,10 @@
           <ul class="portfolio-tech">
             <li class="portfolio-list list">
               <img src="./images/ptfl1.jpg" alt="Наші співробітники" width="370" height="295" />
-              <h2 class="portfolio-title">Технокряк</h2>
-              <p class="portfolio-text">Веб-сайт</p>
+              <div class="portfolio-block">
+                <h2 class="portfolio-title">Технокряк</h2>
+                <p class="portfolio-text">Веб-сайт</p>
+              </div>
             </li>
             <li class="portfolio-list list">
               <img
@@ -65,40 +68,54 @@
                 width="370"
                 height="295"
               />
-              <h2 class="portfolio-title">
-                Постер <span lang="en">New Orlean vs Golden Star</span>
-              </h2>
-              <p class="portfolio-text">Дизайн</p>
+              <div class="portfolio-block">
+                <h2 class="portfolio-title">
+                  Постер <span lang="en">New Orlean vs Golden Star</span>
+                </h2>
+                <p class="portfolio-text">Дизайн</p>
+              </div>
             </li>
             <li class="portfolio-list list">
               <img src="./images/ptfl3.jpg" alt="Емблема ресторану" width="370" height="295" />
-              <h2 class="portfolio-title">Ресторан <span lang="en">Seafood</span></h2>
-              <p class="portfolio-text">Додаток</p>
+              <div class="portfolio-block">
+                <h2 class="portfolio-title">Ресторан <span lang="en">Seafood</span></h2>
+                <p class="portfolio-text">Додаток</p>
+              </div>
             </li>
             <li class="portfolio-list list">
               <img src="./images/ptfl4.jpg" alt="Навушники" width="370" height="295" />
-              <h2 class="portfolio-title">Проєкт <span lang="en">Prime</span></h2>
-              <p class="portfolio-text">Маркетинг</p>
+              <div class="portfolio-block">
+                <h2 class="portfolio-title">Проєкт <span lang="en">Prime</span></h2>
+                <p class="portfolio-text">Маркетинг</p>
+              </div>
             </li>
             <li class="portfolio-list list">
               <img src="./images/ptfl5.jpg" alt="Дві коробки" width="370" height="295" />
-              <h2 class="portfolio-title">Проєкт <span lang="en">Boxes</span></h2>
-              <p class="portfolio-text">Додаток</p>
+              <div class="portfolio-block">
+                <h2 class="portfolio-title">Проєкт <span lang="en">Boxes</span></h2>
+                <p class="portfolio-text">Додаток</p>
+              </div>
             </li>
             <li class="portfolio-list list">
               <img src="./images/ptfl6.jpg" alt="Монітор" width="370" height="295" />
-              <h2 lang="en" class="portfolio-title">Inspiration has no Borders</h2>
-              <p class="portfolio-text">Веб-сайт</p>
+              <div class="portfolio-block">
+                <h2 lang="en" class="portfolio-title">Inspiration has no Borders</h2>
+                <p class="portfolio-text">Веб-сайт</p>
+              </div>
             </li>
             <li class="portfolio-list list">
               <img src="./images/ptfl7.jpg" alt="Розгорнута книга" width="370" height="295" />
-              <h2 class="portfolio-title">Видання <span lang="en">Limited Edition</span></h2>
-              <p class="portfolio-text">Дизайн</p>
+              <div class="portfolio-block">
+                <h2 class="portfolio-title">Видання <span lang="en">Limited Edition</span></h2>
+                <p class="portfolio-text">Дизайн</p>
+              </div>
             </li>
             <li class="portfolio-list list">
               <img src="./images/ptfl8.jpg" alt="Бірка з емблемою" width="370" height="295" />
-              <h2 class="portfolio-title">Проект <span lang="en">LAB</span></h2>
-              <p class="portfolio-text">Маркетинг</p>
+              <div class="portfolio-block">
+                <h2 class="portfolio-title">Проект <span lang="en">LAB</span></h2>
+                <p class="portfolio-text">Маркетинг</p>
+              </div>
             </li>
             <li class="portfolio-list list">
               <img
@@ -107,8 +124,10 @@
                 width="370"
                 height="295"
               />
-              <h2 lang="en" class="portfolio-title">Growing Business</h2>
-              <p class="portfolio-text">Додаток</p>
+              <div class="portfolio-block">
+                <h2 lang="en" class="portfolio-title">Growing Business</h2>
+                <p class="portfolio-text">Додаток</p>
+              </div>
             </li>
           </ul>
         </div>
@@ -116,8 +135,8 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <div class="foter-logo">
-          <a href="./index.html" lang="en" class="header-logo"
+        <div class="foter-logo-cont">
+          <a href="./index.html" lang="en" class="footer-logo"
             >Web<span class="logo-accent-footer">Studio</span></a
           >
         </div>
