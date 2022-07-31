@@ -237,6 +237,10 @@ a {
     color: var(--main-text-color);
 }
 
+.features-item {
+    flex-basis: calc((100% - 90px) / 4);
+}
+
 /* ---employment--- */
 
 .employment {
