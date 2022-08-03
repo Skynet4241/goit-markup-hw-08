@@ -117,6 +117,17 @@ a {
     column-gap: 50px;
 }
 
+.contact-list-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-icon {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
 .header {
     background-color: #fff;
     border: 1px solid #ECECEC;
@@ -150,6 +161,9 @@ a {
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* ---Hero--- */
