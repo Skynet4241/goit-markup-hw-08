@@ -156,6 +156,13 @@ a {
 
 .hero {
     padding: 200px 0;
+    max-width: 1600px;
+    margin: 0 auto;
+    background-color: #2F303A;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 
 .hero-title {
@@ -166,14 +173,7 @@ a {
 
 .hero-btn {
     margin: 0 auto;
-}
-
-.hero-btn {
     padding: 10px 32px;
-}
-
-.hero {
-    background-color: #2F303A;
 }
 
 .hero-title {
@@ -186,7 +186,8 @@ a {
     color: var(--title-inverse-color);
 }
 
-.hero-btn:hover {
+.hero-btn:hover,
+.hero-btn:focus {
     background-color: #188CE8;
 }
 
@@ -285,17 +286,37 @@ a {
     padding: 30px 0;
 }
 
-.team-title {
-    margin-bottom: 10px;
+.team-soc {
+    display: flex;
+    justify-content: center;
+    column-gap: 10px;
+
 }
 
+.team-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
-.team-item {
-    /* padding-bottom: 94px; */
+.team-soc-icon {
+    fill: #AFB1B8;
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus {
+    background-color: #2196F3;
+}
+
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
+    fill: #FFFFFF;
 }
 
 .team-name {
-
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -311,6 +332,7 @@ a {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--title-color);
+    margin-bottom: 10px;
 }
 
 .team-text {
@@ -319,6 +341,7 @@ a {
     text-align: center;
     letter-spacing: 0.03em;
     color: var(--main-text-color);
+    margin-bottom: 16px;
 }
 
 .team-item {
