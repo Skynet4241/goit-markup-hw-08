@@ -7,6 +7,7 @@
     --title-color: #212121;
     --title-inverse-color: #fff;
     --team-section-background-color: #f5f4fa;
+    --footer-title-color: #FFFFFF;
     --footer-background-color: #2f303a;
     --footer-contacts-color: rgb(255 255 255 / 0.6);
 }
@@ -321,7 +322,6 @@ a {
     display: flex;
     justify-content: center;
     column-gap: 10px;
-
 }
 
 .team-soc-link {
@@ -490,6 +490,47 @@ a {
 .footer-item:hover,
 .footer-item:focus {
     color: var(--accent-color);
+}
+
+.footer-info {
+    display: flex;
+    gap: 70px;
+    align-items: baseline;
+}
+
+.footer-soc-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--footer-title-color);
+    margin-bottom: 20px;
+}
+
+.footer-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(255, 255, 255, 0.1);
+    fill: #FFFFFF;
+}
+
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+    background-color: #2196F3;
+}
+
+.footer .container {
+    display: flex;
+}
+
+.footer-soc-list {
+    display: flex;
+    column-gap: 10px;
 }
 
 /* ---portfolio--- */
