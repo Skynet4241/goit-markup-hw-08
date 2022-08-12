@@ -662,6 +662,32 @@ a {
     flex-basis: calc((100% - 60px) / 3);
 }
 
+.portfolio-list:hover .portfolio-top-text {
+    transform: translateY(0);
+}
+
+.portfolio-top-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: #FFFFFF;
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+    height: 100%;
+    transform: translateY(100%);
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.portfolio-wrap {
+    position: relative;
+    overflow: hidden;
+}
+
 .portfolio-link {
     display: block;
 
