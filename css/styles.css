@@ -781,3 +781,42 @@ a {
 .modal-close:focus .modal-close-icon {
     fill: var(--accent-color);
 }
+
+.modal-title {
+    padding: 40px;
+    padding-bottom: 15px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.form-input {
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    margin-bottom: 28px;
+}
+
+.inpute-title {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.67;
+    letter-spacing: 0.01em;
+    color: #757575;
+    display: block;
+    margin-bottom: 4px;
+}
+
+.modal-text {
+    width: 100%;
+    height: 120px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    padding-left: 15px;
+
+}
