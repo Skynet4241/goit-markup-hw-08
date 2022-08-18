@@ -492,6 +492,11 @@ a {
 
 /* ---footer--- */
 
+.footer-adress-section {
+    flex-grow: 1;
+    margin-right: 70px;
+}
+
 .footer-logo {
     margin-bottom: 20px;
 }
@@ -562,8 +567,11 @@ a {
 
 .footer-info {
     display: flex;
-    gap: 70px;
     align-items: baseline;
+}
+
+.footer-soc {
+    margin-right: 93px;
 }
 
 .footer-soc-title {
@@ -603,6 +611,57 @@ a {
 .footer-soc-list {
     display: flex;
     column-gap: 10px;
+}
+
+.subscription-form {
+    display: block;
+    align-items: col;
+}
+
+.footer-subscription {
+    display: flex;
+    gap: 12px;
+}
+
+.footer-subscription-text {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.footer-input {
+    padding: 15px 16px;
+    min-width: 358px;
+    height: 50px;
+    background-color: #2F303A;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+.subscription-btn {
+    min-width: 200px;
+    height: 50px;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.06em;
+    background-color: var(--accent-color);
+    border-color: transparent;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.footer-mail-icon {
+    margin-left: 10px;
 }
 
 /* ---portfolio--- */
@@ -722,6 +781,10 @@ a {
     background: var(--title-inverse-color);
 }
 
+
+/* --modal-- */
+
+
 .backdrop {
     position: fixed;
     top: 0;
@@ -742,7 +805,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%) scale(1) rotate(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    ;
+    padding: 40px;
 }
 
 .backdrop.is-hidden .modal {
@@ -783,7 +846,6 @@ a {
 }
 
 .modal-title {
-    padding: 40px;
     padding-bottom: 15px;
     font-weight: 700;
     font-size: 20px;
@@ -798,7 +860,16 @@ a {
     height: 40px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
-    margin-bottom: 28px;
+    padding: 12px 42px;
+    transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus {
+    outline-color: var(--accent-color);
+}
+
+.input-field {
+    margin-bottom: 10px;
 }
 
 .inpute-title {
@@ -818,5 +889,57 @@ a {
     border-radius: 4px;
     resize: none;
     padding-left: 15px;
+    transition: outline-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-text:focus {
+    outline-color: var(--accent-color);
+}
+
+.input-wrap {
+    display: block;
+    position: relative;
+}
+
+.input-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 12px;
+    display: inline-block;
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.form-input:focus+.input-icon {
+    fill: #2196F3;
+}
+
+.check-text {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: #757575;
+    display: flex;
+    align-items: center;
 
 }
+
+.check-text::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 3px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.input-check:checked+.check-text::before {
+    background-color: #2196F3;
+    background-image: url(../images/check-icon.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    border: none;
+}
+
+.check-text-terms {}
