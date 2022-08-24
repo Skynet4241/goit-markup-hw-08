@@ -1,0 +1,40 @@
+.employment-section {
+  padding-top: 0;
+}
+
+.employment {
+  display: flex;
+  column-gap: 30px;
+}
+
+.employment-item {
+  position: relative;
+}
+
+.employment-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  margin-bottom: 50px;
+}
+
+.employment-text {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-inverse-color);
+  background: rgba(47, 48, 58, 0.8);
+  height: 70px;
+}
