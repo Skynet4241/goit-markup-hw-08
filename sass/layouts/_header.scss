@@ -1,13 +1,3 @@
-.header-list .current {
-  color: var(--accent-color);
-  position: relative;
-}
-
-.header .container {
-  display: flex;
-  align-items: center;
-}
-
 .header-logo {
   margin-right: 93px;
   align-items: center;
@@ -17,6 +7,10 @@
   text-align: center;
   display: flex;
   column-gap: 50px;
+  .current {
+    color: var(--accent-color);
+    position: relative;
+  }
 }
 
 .header-item {
@@ -44,6 +38,10 @@
 .header {
   background-color: #fff;
   border-bottom: 1px solid #ececec;
+  .container {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .header-logo {
@@ -67,6 +65,10 @@
   letter-spacing: 0.02em;
   color: var(--title-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .header-list &:hover,
+  .header-list &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .contact-item {
@@ -79,16 +81,10 @@
   align-items: center;
   justify-content: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-list .header-item:hover,
-.header-list .header-item:focus {
-  color: var(--accent-color);
-}
-
-.contact-list .contact-item:hover,
-.contact-list .contact-item:focus {
-  color: var(--accent-color);
+  .contact-list &:hover,
+  .contact-list &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header-item.current::after {
