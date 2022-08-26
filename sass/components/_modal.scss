@@ -39,9 +39,7 @@
   right: 8px;
   width: 30px;
   height: 30px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %align-list;
   background-color: transparent;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
@@ -65,11 +63,8 @@
 
 .modal-title {
   margin-bottom: 12px;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 1.15;
+  @include font(700, 20, 1.15, 0.03);
   text-align: center;
-  letter-spacing: 0.03em;
   color: #212121;
 }
 
@@ -94,10 +89,7 @@
 }
 
 .inpute-title {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.67;
-  letter-spacing: 0.01em;
+  @include font(null, 12, 1.67, 0.01);
   color: #757575;
   display: block;
   margin-bottom: 4px;
@@ -117,10 +109,7 @@
     border-color: var(--accent-color);
   }
   &::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
+    @include font(null, 12, 1.17, 0.01);
     color: rgba(117, 117, 117, 0.5);
   }
 }
@@ -147,14 +136,9 @@
 }
 
 .check-text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
+  @include font(null, 14, 1.71, 0.03);
   color: #757575;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align-list;
 }
 
 .check-text-link {
@@ -167,29 +151,24 @@
   height: 15px;
   border: 2px solid #212121;
   border-radius: 3px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align-list;
   margin-right: 7px;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .input-check:focus + .check-text & {
+    border-color: var(--accent-color);
+  }
+  .input-check:checked + .check-text & {
+    background-color: var(--accent-color);
+    border: none;
+  }
 }
 
 .icon-check {
   fill: transparent;
-}
-
-.input-check:checked + .check-text .check-icon {
-  background-color: var(--accent-color);
-  border: none;
-}
-
-.input-check:checked + .check-text .icon-check {
-  fill: #ffffff;
-}
-
-.input-check:focus + .check-text .check-icon {
-  border-color: var(--accent-color);
+  .input-check:checked + .check-text & {
+    fill: #ffffff;
+  }
 }
 
 .check-btn {
@@ -198,15 +177,10 @@
   max-width: 100%;
   padding: 0 32px;
   overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @extend %align-list;
   color: var(--title-inverse-color);
   font-family: inherit;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.06em;
+  @include font(700, 16, 1.88, 0.06);
   background-color: var(--accent-color);
   border-color: transparent;
   border-radius: 4px;

@@ -25,9 +25,7 @@
 }
 
 .contact-list-list {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align-list;
 }
 
 .contact-icon {
@@ -38,7 +36,7 @@
 .header {
   background-color: #fff;
   border-bottom: 1px solid #ececec;
-  .container {
+  &__container {
     display: flex;
     align-items: center;
   }
@@ -47,10 +45,7 @@
 .header-logo {
   font-family: 'Raleway', sans-serif;
   font-style: normal;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
+  @include font(700, 26, 1.19, 0.03);
   color: var(--accent-color);
 }
 
@@ -59,10 +54,7 @@
 }
 
 .header-item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(500, 14, 1.14, 0.02);
   color: var(--title-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .header-list &:hover,
@@ -72,14 +64,9 @@
 }
 
 .contact-item {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font(500, 14, 1.14, 0.02);
   color: var(--main-text-color);
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align-list;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   .contact-list &:hover,
   .contact-list &:focus {

@@ -1,11 +1,13 @@
-@import './utils/roots';
+@import './utils/vars';
 @import './base/reset';
 @import './base/common';
 @import './utils/hidden';
+@import './utils/placeholders';
+
 @import './components/container';
 @import './layouts/header';
 @import './layouts/hero';
-@import './components/btn';
+
 @import './layouts/features';
 @import './layouts/employment';
 @import './layouts/team';

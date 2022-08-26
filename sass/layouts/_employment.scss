@@ -12,11 +12,8 @@
 }
 
 .employment-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
+  @include font(700, 36, 1.17, 0.03);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--title-color);
   margin-bottom: 50px;
 }
@@ -26,13 +23,8 @@
   left: 0;
   bottom: 0;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
+  @extend %align-list;
+  @include font(700, 14, 1.14, 0.03);
   text-transform: uppercase;
   color: var(--title-inverse-color);
   background: rgba(47, 48, 58, 0.8);
