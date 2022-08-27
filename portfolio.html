@@ -24,29 +24,33 @@
 
   <body>
     <header class="header">
-      <div class="container">
-        <a href="./index.html" lang="en" class="header-logo"
-          >Web<span class="logo-accent">Studio</span></a
+      <div class="container header__container">
+        <a href="./index.html" lang="en" class="logo header__logo"
+          >Web<span class="logo__dark">Studio</span></a
         >
-        <nav>
-          <ul class="header-list list">
-            <li><a class="header-item" href="./index.html">Студія</a></li>
-            <li><a class="header-item current" href="./portfolio.html">Портфоліо</a></li>
-            <li><a class="header-item" href="">Контакти</a></li>
+        <nav class="navigation">
+          <ul class="site-nav">
+            <li class="site-nav__item">
+              <a class="site-nav__link" href="./index.html">Студія</a>
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link current" href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="site-nav__item"><a class="site-nav__link" href="">Контакти</a></li>
           </ul>
         </nav>
-        <ul class="contact-list list">
-          <li class="contact-list-list">
-            <a class="contact-item" href="mailto:info@devstudio.com">
-              <svg class="contact-icon" width="16" height="12">
+        <ul class="contacts">
+          <li class="contact__item">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+              <svg class="contact__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               info@devstudio.com</a
             >
           </li>
-          <li class="contact-list-list">
-            <a class="contact-item" href="tel:+380961111111">
-              <svg class="contact-icon" width="10" height="16">
+          <li class="contact__item">
+            <a class="contact__link" href="tel:+380961111111">
+              <svg class="contact__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-phone"></use>
               </svg>
               +38 096 111 11 11
@@ -231,10 +235,10 @@
       <div class="container">
         <div class="footer-info">
           <div class="footer-adress-section">
-            <a href="./index.html" lang="en" class="footer-logo"
-              >Web<span class="logo-accent-footer">Studio</span></a
+            <a href="./index.html" lang="en" class="logo footer__logo"
+              >Web<span class="logo__light">Studio</span></a
             >
-            <address>
+            <address class="footer-address">
               <ul class="footer-address list">
                 <li class="footer-list">
                   <a class="footer-item adress" href="https://goo.gl/maps/KQHs6RmRJjYk8pqQ7"

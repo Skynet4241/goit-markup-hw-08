@@ -3,11 +3,7 @@
   column-gap: 30px;
 }
 
-.features-img {
-  @extend %align-list;
-}
-
-.features-box {
+.features__icon-box {
   width: 270px;
   height: 120px;
   background: #f5f4fa;
@@ -16,18 +12,18 @@
   margin-bottom: 30px;
 }
 
-.features-title {
+.features__title {
   @include font(700, 14, 1.14, 0.03);
   text-transform: uppercase;
   color: var(--title-color);
   margin-bottom: 10px;
 }
 
-.features-text {
-  @include font(null, 14, 1.71, 0.03);
-  color: var(--main-text-color);
+.features__item {
+  flex-basis: calc((100% - 90px) / 4);
 }
 
-.features-item {
-  flex-basis: calc((100% - 90px) / 4);
+.features__text {
+  @include font(null, 14, 1.71, 0.03);
+  color: var(--main-text-color);
 }

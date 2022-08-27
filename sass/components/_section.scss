@@ -1,0 +1,15 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.section--no-padding-top {
+  padding-top: 0;
+}
+
+.section__title {
+  @include font(700, 36, 1.17, 0.03);
+  text-align: center;
+  color: var(--title-color);
+  margin-bottom: 50px;
+}

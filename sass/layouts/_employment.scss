@@ -1,24 +1,13 @@
-.employment-section {
-  padding-top: 0;
-}
-
 .employment {
   display: flex;
   column-gap: 30px;
 }
 
-.employment-item {
+.employment__item {
   position: relative;
 }
 
-.employment-title {
-  @include font(700, 36, 1.17, 0.03);
-  text-align: center;
-  color: var(--title-color);
-  margin-bottom: 50px;
-}
-
-.employment-text {
+.employment__text {
   position: absolute;
   left: 0;
   bottom: 0;

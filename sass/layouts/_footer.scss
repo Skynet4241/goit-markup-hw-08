@@ -3,14 +3,8 @@
   margin-right: 70px;
 }
 
-.footer-logo {
+.footer__logo {
   margin-bottom: 20px;
-}
-
-.footer-logo {
-  font-family: 'Raleway', sans-serif;
-  font-style: normal;
-  @include font(700, 26, 1.19, 0.03);
   color: var(--accent-color);
   display: inline-block;
 }
@@ -22,7 +16,7 @@
   }
 }
 
-.logo-accent-footer {
+.logo__light {
   color: var(--title-inverse-color);
 }
 
@@ -34,12 +28,9 @@
   }
 }
 
-.adress {
-  font-style: normal;
-}
-
 .footer-address {
   width: 231px;
+  font-style: normal;
 }
 
 .footer-item {
