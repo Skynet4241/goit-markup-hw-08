@@ -3,10 +3,3 @@
   align-items: center;
   justify-content: center;
 }
-
-@mixin font($fw, $fs, $lh, $ls) {
-  font-weight: $fw;
-  font-size: $fs + px;
-  line-height: $lh;
-  letter-spacing: $ls + em;
-}

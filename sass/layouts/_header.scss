@@ -27,7 +27,7 @@
   text-align: center;
   display: flex;
   column-gap: 50px;
-  .current {
+  .site-nav__link--current {
     color: var(--accent-color);
     position: relative;
   }
@@ -45,7 +45,7 @@
   }
 }
 
-.site-nav__link.current::after {
+.site-nav__link.site-nav__link--current::after {
   content: '';
   position: absolute;
   bottom: -1px;

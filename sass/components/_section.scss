@@ -7,6 +7,10 @@
   padding-top: 0;
 }
 
+.section--other-background {
+  background-color: var(--team-section-background-color);
+}
+
 .section__title {
   @include font(700, 36, 1.17, 0.03);
   text-align: center;

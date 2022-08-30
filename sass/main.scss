@@ -1,4 +1,5 @@
 @import './utils/vars';
+@import './utils/mixin';
 @import './utils/placeholders';
 @import './base/reset';
 @import './base/common';
@@ -12,7 +13,6 @@
 @import './layouts/features';
 @import './layouts/employment';
 @import './layouts/team';
-@import './components/social';
 @import './layouts/customers';
 @import './layouts/footer';
 @import './layouts/portfolio';
