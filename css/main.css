@@ -13,7 +13,7 @@
   --modal-btn-close-color: #000;
 }
 
-.check-btn, .check-icon, .check-text, .modal-close, .subscription-btn, .footer-soc-link, .customers__link, .customers, .social__link, .employment__text, .features__icon-box, .contact__link, .contact__item {
+.check-btn, .check-icon, .check-text, .modal-close, .subscription-btn, .footer-soc-link, .customers__link, .customers, .social__link, .employment__text, .features__icon-box, .close-menu, .contact__link, .contact__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -53,8 +53,12 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding: 60px 0;
+}
+@media screen and (min-width: 1200px) {
+  .section {
+    padding: 94px 0;
+  }
 }
 
 .section--no-padding-top {
@@ -90,10 +94,24 @@ body {
 }
 
 .container {
-  width: 1200px;
   padding-right: 15px;
   padding-left: 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .logo {
@@ -107,10 +125,10 @@ body {
 }
 
 .header__logo {
-  margin-right: 93px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  padding: 16px 0;
 }
 
 .logo__dark {
@@ -128,6 +146,13 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+@media screen and (max-width: 767.98px) {
+  .header__container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .site-nav {
@@ -198,8 +223,81 @@ body {
   fill: currentColor;
 }
 
+@media screen and (max-width: 767.98px) {
+  .menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 48px 40px;
+    background-color: #fff;
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 250ms linear;
+    transition: -webkit-transform 250ms linear;
+    transition: transform 250ms linear;
+    transition: transform 250ms linear, -webkit-transform 250ms linear;
+  }
+}
+
+.menu-container.is-open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.open-menu {
+  min-height: 40px;
+  min-width: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+}
+
+.close-menu {
+  position: absolute;
+  top: 21px;
+  right: 25px;
+  min-width: 40px;
+  min-height: 40px;
+  background-color: transparent;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+}
+.close-menu:hover, .close-menu:focus {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (min-width: 768px) {
+  .open-menu,
+.close-menu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .open-menu,
+.close-menu {
+    display: none;
+  }
+}
+
 .hero {
-  padding: 200px 0;
+  padding: 118px 0;
   max-width: 1600px;
   margin: 0 auto;
   background-color: #2f303a;
@@ -209,18 +307,29 @@ body {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 200px 0;
+  }
+}
 
 .hero__title {
+  font-size: 26px;
+  line-height: 1.61;
   max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
-  letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
   color: var(--title-inverse-color);
+}
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+  }
 }
 
 .hero__btn {

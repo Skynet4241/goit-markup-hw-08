@@ -6,8 +6,9 @@
 }
 
 .header__logo {
-  margin-right: 93px;
+  // margin-right: 93px;
   align-items: center;
+  padding: 16px 0;
 }
 
 .logo__dark {
@@ -20,6 +21,9 @@
   &__container {
     display: flex;
     align-items: center;
+    @include for-size(mobile-only) {
+      justify-content: space-between;
+    }
   }
 }
 

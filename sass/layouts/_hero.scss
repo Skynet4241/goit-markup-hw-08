@@ -1,5 +1,5 @@
 .hero {
-  padding: 200px 0;
+  padding: 118px 0;
   max-width: 1600px;
   margin: 0 auto;
   background-color: #2f303a;
@@ -8,16 +8,25 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @include for-size(desktop) {
+    padding: 200px 0;
+  }
 }
 
 .hero__title {
+  font-size: 26px;
+  line-height: 1.61;
   max-width: 696px;
   margin: 0 auto;
   margin-bottom: 30px;
-  @include font(900, 44, 1.36, 0.06);
+
   text-align: center;
   text-transform: uppercase;
   color: var(--title-inverse-color);
+
+  @include for-size(desktop) {
+    @include font(900, 44, 1.36, 0.06);
+  }
 }
 
 .hero__btn {
