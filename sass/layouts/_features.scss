@@ -34,6 +34,12 @@
 
 .features__item {
   width: 100%;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @include for-size(mobile-only) {
+    margin-bottom: 30px;
+  }
 
   @include for-size(desktop) {
     flex-basis: calc((100% - 90px) / 4);
@@ -44,8 +50,4 @@
   @include font(null, 14, 1.71, 0.03);
   color: var(--main-text-color);
   justify-content: center;
-
-  @include for-size(mobile-only) {
-    margin-bottom: 30px;
-  }
 }

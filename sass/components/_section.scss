@@ -23,8 +23,13 @@
 }
 
 .section__title {
-  @include font(700, 36, 1.17, 0.03);
+  @include font(700, 28, 1.17, 0.03);
   text-align: center;
   color: var(--title-color);
   margin-bottom: 50px;
+
+  @include for-size(desktop) {
+    @include font(700, 36, 1.17, 0.03);
+    margin-bottom: 50px;
+  }
 }
