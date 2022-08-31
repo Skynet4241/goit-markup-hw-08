@@ -1,11 +1,19 @@
 .customers {
   @extend %align-list;
   gap: 30px;
+  flex-wrap: wrap;
 }
 
 .customers__item {
-  width: 170px;
   height: 92px;
+
+  @include for-size(mobile-only) {
+    flex-basis: calc((100% - 30px) / 2);
+  }
+
+  @include for-size(desktop) {
+    width: 170px;
+  }
 }
 
 .customers__link {
