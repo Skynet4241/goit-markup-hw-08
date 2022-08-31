@@ -8,6 +8,14 @@
 
 .section--no-padding-top {
   padding-top: 0;
+
+  @include for-size(mobile-only) {
+    display: none;
+  }
+
+  @include for-size(tablet-only) {
+    display: none;
+  }
 }
 
 .section--other-background {
