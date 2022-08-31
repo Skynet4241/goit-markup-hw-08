@@ -19,9 +19,7 @@
 .open-menu {
   min-height: 40px;
   min-width: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  @extend %align-list;
   margin: 0;
   padding: 0;
   background-color: transparent;

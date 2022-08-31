@@ -1,15 +1,24 @@
 .features {
   display: flex;
   column-gap: 30px;
+  flex-wrap: wrap;
+
+  @include for-size(tablet) {
+  }
+
+  @include for-size(desktop) {
+  }
 }
 
 .features__icon-box {
-  width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   @extend %align-list;
   margin-bottom: 30px;
+  @include for-size(desktop) {
+    width: 270px;
+  }
 }
 
 .features__title {
@@ -17,13 +26,20 @@
   text-transform: uppercase;
   color: var(--title-color);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .features__item {
-  flex-basis: calc((100% - 90px) / 4);
+  width: 100%;
+
+  @include for-size(desktop) {
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .features__text {
   @include font(null, 14, 1.71, 0.03);
   color: var(--main-text-color);
+  justify-content: center;
+  margin-bottom: 30px;
 }

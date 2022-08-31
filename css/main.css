@@ -13,7 +13,7 @@
   --modal-btn-close-color: #000;
 }
 
-.check-btn, .check-icon, .check-text, .modal-close, .subscription-btn, .footer-soc-link, .customers__link, .customers, .social__link, .employment__text, .features__icon-box, .close-menu, .contact__link, .contact__item {
+.check-btn, .check-icon, .check-text, .modal-close, .subscription-btn, .footer-soc-link, .customers__link, .customers, .social__link, .employment__text, .features__icon-box, .close-menu, .open-menu, .contact__link, .contact__item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -249,15 +249,6 @@ body {
 .open-menu {
   min-height: 40px;
   min-width: 40px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -369,14 +360,19 @@ body {
   -webkit-column-gap: 30px;
      -moz-column-gap: 30px;
           column-gap: 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
-
 .features__icon-box {
-  width: 270px;
   height: 120px;
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .features__icon-box {
+    width: 270px;
+  }
 }
 
 .features__title {
@@ -387,11 +383,17 @@ body {
   text-transform: uppercase;
   color: var(--title-color);
   margin-bottom: 10px;
+  text-align: center;
 }
 
 .features__item {
-  -ms-flex-preferred-size: calc((100% - 90px) / 4);
-      flex-basis: calc((100% - 90px) / 4);
+  width: 100%;
+}
+@media screen and (min-width: 1200px) {
+  .features__item {
+    -ms-flex-preferred-size: calc((100% - 90px) / 4);
+        flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .features__text {
@@ -399,6 +401,10 @@ body {
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--main-text-color);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 30px;
 }
 
 .employment {
