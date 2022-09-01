@@ -28,6 +28,10 @@
   color: var(--title-color);
   margin-bottom: 50px;
 
+  @include for-size(tablet) {
+    margin-bottom: 30px;
+  }
+
   @include for-size(desktop) {
     @include font(700, 36, 1.17, 0.03);
     margin-bottom: 50px;

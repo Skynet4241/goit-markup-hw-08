@@ -89,6 +89,11 @@ body {
   color: var(--title-color);
   margin-bottom: 50px;
 }
+@media screen and (min-width: 768px) {
+  .section__title {
+    margin-bottom: 30px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .section__title {
     font-weight: 700;
@@ -787,6 +792,11 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 1200px) {
+  .footer-info {
+    gap: 0;
+  }
+}
 
 @media screen and (min-width: 1200px) {
   .footer-adress-section {
@@ -794,6 +804,7 @@ body {
         -ms-flex-positive: 1;
             flex-grow: 1;
     margin-right: 70px;
+    text-align: start;
   }
 }
 
@@ -857,6 +868,11 @@ body {
   text-transform: uppercase;
   color: var(--footer-title-color);
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .footer-soc-title {
+    text-align: start;
+  }
 }
 
 .footer-soc-link {

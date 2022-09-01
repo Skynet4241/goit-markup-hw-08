@@ -12,6 +12,10 @@
   align-items: baseline;
   flex-wrap: wrap;
   gap: 60px;
+  @include for-size(desktop) {
+    gap: 0;
+  }
+
   text-align: center;
   justify-content: center;
 }
@@ -20,6 +24,7 @@
   @include for-size(desktop) {
     flex-grow: 1;
     margin-right: 70px;
+    text-align: start;
   }
 }
 
@@ -76,6 +81,9 @@
   text-transform: uppercase;
   color: var(--footer-title-color);
   margin-bottom: 20px;
+  @include for-size(desktop) {
+    text-align: start;
+  }
 }
 
 .footer-soc-link {
