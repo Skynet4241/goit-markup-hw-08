@@ -158,6 +158,11 @@ body {
           align-items: center;
   padding: 16px 0;
 }
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    margin-right: 93px;
+  }
+}
 
 .logo__dark {
   color: var(--logo-dark-color);
@@ -181,6 +186,15 @@ body {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+.menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 .site-nav {

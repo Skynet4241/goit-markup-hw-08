@@ -9,9 +9,11 @@
 }
 
 .header__logo {
-  // margin-right: 93px;
   align-items: center;
   padding: 16px 0;
+  @include for-size(desktop) {
+    margin-right: 93px;
+  }
 }
 
 .logo__dark {
@@ -28,6 +30,11 @@
       justify-content: space-between;
     }
   }
+}
+
+.menu-container {
+  display: flex;
+  flex-grow: 1;
 }
 
 .site-nav {
