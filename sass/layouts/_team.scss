@@ -6,7 +6,7 @@
     flex-wrap: wrap;
   }
 
-  @include for-size(tablet) {
+  @include for-size(tablet-only) {
     flex-wrap: wrap;
   }
 }
@@ -17,7 +17,7 @@
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 
-  @include for-size(tablet) {
+  @include for-size(tablet-only) {
     flex-basis: calc((100% - 60px) / 2);
   }
 
