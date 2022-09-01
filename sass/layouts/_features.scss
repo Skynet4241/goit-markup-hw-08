@@ -3,9 +3,6 @@
   column-gap: 30px;
   flex-wrap: wrap;
 
-  @include for-size(tablet) {
-  }
-
   @include for-size(desktop) {
   }
 }
@@ -39,6 +36,10 @@
   }
   @include for-size(mobile-only) {
     margin-bottom: 30px;
+  }
+
+  @include for-size(tablet) {
+    flex-basis: calc((100% - 60px) / 2);
   }
 
   @include for-size(desktop) {

@@ -11,6 +11,11 @@
 .header__logo {
   align-items: center;
   padding: 16px 0;
+
+  @include for-size(tablet) {
+    margin-right: 88px;
+  }
+
   @include for-size(desktop) {
     margin-right: 93px;
   }
@@ -105,7 +110,7 @@
 
 .contacts {
   display: flex;
-  margin-left: auto;
+
   column-gap: 50px;
 
   @include for-size(mobile-only) {
@@ -115,6 +120,18 @@
     margin-top: 302px;
     margin-bottom: 64px;
     @include font(500, 14, 1.14, 0.02);
+  }
+
+  @include for-size(tablet) {
+    margin-left: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  @include for-size(desktop) {
+    margin-left: auto;
   }
 }
 
