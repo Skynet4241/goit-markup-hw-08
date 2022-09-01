@@ -776,6 +776,9 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 60px;
@@ -893,6 +896,17 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
 }
+@media screen and (min-width: 768px) and (max-width: 1199.98px) {
+  .footer-subscription {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 @media screen and (min-width: 1200px) {
   .footer-subscription {
     gap: 12px;
@@ -923,7 +937,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   .footer-input {
-    min-width: 450px;
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {

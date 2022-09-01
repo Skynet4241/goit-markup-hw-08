@@ -9,7 +9,7 @@
 
 .footer-info {
   display: flex;
-  // align-items: baseline;
+  align-items: baseline;
   flex-wrap: wrap;
   gap: 60px;
   text-align: center;
@@ -104,11 +104,17 @@
 .footer-subscription {
   display: flex;
   gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  @include for-size(tablet-only) {
+    flex-direction: column;
+    align-items: center;
+  }
+
   @include for-size(desktop) {
     gap: 12px;
   }
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .footer-subscription-text {
@@ -124,7 +130,7 @@
   width: 100%;
 
   @include for-size(mobile) {
-    min-width: 450px;
+    width: 450px;
   }
 
   @include for-size(desktop) {
