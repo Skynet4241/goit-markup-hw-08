@@ -16,8 +16,8 @@
 
 .modal {
   position: absolute;
-  width: 530px;
-  min-height: 580px;
+  width: 450px;
+  height: 609px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -27,6 +27,10 @@
   transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+  @include for-size(desktop) {
+    width: 530px;
+    min-height: 580px;
+  }
 }
 
 .backdrop.is-hidden .modal {
@@ -136,9 +140,12 @@
 }
 
 .check-text {
-  @include font(null, 14, 1.71, 0.03);
+  @include font(null, 12, 1.71, 0.03);
   color: #757575;
   @extend %align-list;
+  @include for-size(desktop) {
+    @include font(null, 14, 1.71, 0.03);
+  }
 }
 
 .check-text-link {
