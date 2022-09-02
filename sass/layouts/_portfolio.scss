@@ -43,10 +43,21 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
+  @include for-size(mobile-only) {
+    flex-direction: column;
+  }
 }
 
 .portfolio-list {
-  flex-basis: calc((100% - 60px) / 3);
+  width: 100%;
+
+  @include for-size(tablet) {
+    flex-basis: calc((100% - 60px) / 2);
+  }
+
+  @include for-size(desktop) {
+    flex-basis: calc((100% - 60px) / 3);
+  }
 }
 
 .portfolio-top-text {
@@ -58,7 +69,7 @@
   background-color: rgba(33, 150, 243, 0.9);
   padding: 63px 24px;
   height: 100%;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   .portfolio-link:hover &,
