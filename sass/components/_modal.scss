@@ -16,6 +16,7 @@
 
 .modal {
   position: absolute;
+  max-width: 100%;
   width: 450px;
   height: 609px;
   background-color: #ffffff;
@@ -27,6 +28,7 @@
   transform: translate(-50%, -50%) scale(1) rotate(0);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
+
   @include for-size(desktop) {
     width: 530px;
     min-height: 580px;

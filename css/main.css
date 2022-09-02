@@ -1286,6 +1286,7 @@ body {
 
 .modal {
   position: absolute;
+  max-width: 100%;
   width: 450px;
   height: 609px;
   background-color: #ffffff;
