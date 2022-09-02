@@ -119,10 +119,9 @@
   }
 }
 
-.navigation {
-  @include for-size(mobile-only) {
-    margin-bottom: 302px;
-  }
+.menu-container__box {
+  display: flex;
+  flex-grow: 1;
 }
 
 .contacts {
