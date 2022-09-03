@@ -2,9 +2,6 @@
   display: flex;
   column-gap: 30px;
   flex-wrap: wrap;
-
-  @include for-size(desktop) {
-  }
 }
 
 .features__icon-box {
@@ -24,26 +21,34 @@
   text-transform: uppercase;
   color: var(--title-color);
   margin-bottom: 10px;
-  @include for-size(mobile-only) {
-    text-align: center;
+  text-align: center;
+
+  @include for-size(tablet) {
+    text-align: start;
+  }
+
+  @include for-size(desktop) {
+    text-align: start;
   }
 }
 
 .features__item {
   width: 100%;
+  margin-bottom: 30px;
   &:last-child {
     margin-bottom: 0;
-  }
-  @include for-size(mobile-only) {
-    margin-bottom: 30px;
   }
 
   @include for-size(tablet) {
     flex-basis: calc((100% - 60px) / 2);
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
   }
 
   @include for-size(desktop) {
     flex-basis: calc((100% - 90px) / 4);
+    margin-bottom: 0;
   }
 }
 
