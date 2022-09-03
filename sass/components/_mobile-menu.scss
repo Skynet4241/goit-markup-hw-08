@@ -73,6 +73,7 @@
 
 .menu-socials {
   display: flex;
+  flex-wrap: wrap;
   @include for-size(tablet) {
     display: none;
   }
