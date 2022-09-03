@@ -1,13 +1,12 @@
 .team {
   display: flex;
   gap: 30px;
-
-  @include for-size(mobile-only) {
+  flex-wrap: wrap;
+  @include for-size(tablet) {
     flex-wrap: wrap;
   }
-
-  @include for-size(tablet-only) {
-    flex-wrap: wrap;
+  @include for-size(desktop) {
+    flex-wrap: nowrap;
   }
 }
 
@@ -20,7 +19,6 @@
   @include for-size(tablet-only) {
     flex-basis: calc((100% - 60px) / 2);
   }
-
   @include for-size(desktop) {
     width: calc((100% - 60px) / 4);
   }

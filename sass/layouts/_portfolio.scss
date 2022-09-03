@@ -4,13 +4,11 @@
   column-gap: 8px;
   row-gap: 15px;
   margin-bottom: 40px;
-
   @include for-size(tablet) {
     justify-content: center;
     column-gap: 8px;
     margin-bottom: 30px;
   }
-
   @include for-size(desktop) {
     justify-content: center;
     column-gap: 8px;
@@ -19,8 +17,8 @@
 }
 
 .portfolio-block {
+  flex-grow: 1;
   padding: 20px 24px;
-  background: #ffffff;
   border: 1px solid #eeeeee;
   border-top: none;
 }
@@ -60,9 +58,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  @include for-size(mobile-only) {
-    flex-direction: column;
-  }
 }
 
 .portfolio-list {
@@ -101,7 +96,9 @@
 }
 
 .portfolio-link {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover,
   &:focus {
