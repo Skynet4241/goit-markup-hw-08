@@ -3,13 +3,25 @@
   max-width: 1600px;
   margin: 0 auto;
   background-color: #2f303a;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-bg.jpg);
+  background-image: var(--bg-gradient), url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  @include for-size(retina) {
+    background-image: var(--bg-gradient), url(../images/hero-bg-mob-2x.jpg);
+  }
+  @include for-size(tablet) {
+    background-image: var(--bg-gradient), url(../images/hero-bg-tab.jpg);
+    @include for-size(retina) {
+      background-image: var(--bg-gradient), url(../images/hero-bg-tab-2x.jpg);
+    }
+  }
   @include for-size(desktop) {
     padding: 200px 0;
+    background-image: var(--bg-gradient), url(../images/hero-bg.jpg);
+    @include for-size(retina) {
+      background-image: var(--bg-gradient), url(../images/hero-bg-2x.jpg);
+    }
   }
 }
 

@@ -11,6 +11,7 @@
   --footer-background-color: #2f303a;
   --footer-contacts-color: rgb(255 255 255 / 0.6);
   --modal-btn-close-color: #000;
+  --bg-gradient: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 .check-btn, .check-icon, .check-text, .modal-close, .subscription-btn, .footer-soc-link, .customers__link, .customers, .social__link, .employment__text, .features__icon-box, .close-menu, .open-menu, .contact__link {
@@ -555,15 +556,35 @@ body {
   max-width: 1600px;
   margin: 0 auto;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg.jpg);
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
+  background-image: var(--bg-gradient), url(../images/hero-bg-mob.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-device-pixel-ratio: 2), screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 192dpi), screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(../images/hero-bg-mob-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: var(--bg-gradient), url(../images/hero-bg-tab.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(../images/hero-bg-tab-2x.jpg);
+  }
+}
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
+    background-image: var(--bg-gradient), url(../images/hero-bg.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: var(--bg-gradient), url(../images/hero-bg-2x.jpg);
   }
 }
 
