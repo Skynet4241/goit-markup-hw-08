@@ -74,6 +74,7 @@
 .menu-socials {
   display: flex;
   flex-wrap: wrap;
+  row-gap: 10px;
   @include for-size(tablet) {
     display: none;
   }

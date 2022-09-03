@@ -549,6 +549,7 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  row-gap: 10px;
 }
 @media screen and (min-width: 768px) {
   .menu-socials {
