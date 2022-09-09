@@ -64,7 +64,7 @@
   width: 100%;
 
   @include for-size(tablet) {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
 
   @include for-size(desktop) {

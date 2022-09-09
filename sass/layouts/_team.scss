@@ -17,7 +17,7 @@
   border-radius: 0px 0px 4px 4px;
 
   @include for-size(tablet-only) {
-    flex-basis: calc((100% - 60px) / 2);
+    flex-basis: calc((100% - 30px) / 2);
   }
   @include for-size(desktop) {
     width: calc((100% - 60px) / 4);
