@@ -5,20 +5,18 @@
   height: 100%;
   background-color: rgba(48, 48, 48, 0.174);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms;
+  padding: 10px;
 }
 
 .modal-form {
-  width: 100%;
-  height: 100%;
   display: flex;
   flex-direction: column;
 }
 
 .modal {
-  position: absolute;
+  position: relative;
   max-width: 100%;
-  width: 450px;
-  height: 609px;
+  max-width: 450px;
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -29,8 +27,13 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 40px;
 
+  @include for-size(tablet) {
+    width: 450px;
+    min-height: 609px;
+  }
+
   @include for-size(desktop) {
-    width: 530px;
+    min-width: 530px;
     min-height: 580px;
   }
 }
@@ -183,7 +186,6 @@
 .check-btn {
   height: 50px;
   min-width: 200px;
-  max-width: 100%;
   padding: 0 32px;
   overflow: hidden;
   @extend %align-list;
